@@ -1,0 +1,8 @@
+fastapi[standard]
+httpx
+matplotlib
+openai
+pydantic
+pydantic-settings
+pytest
+python-dotenv

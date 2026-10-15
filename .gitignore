@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+
+# JetBrains project settings
+.idea/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test cache
+.pytest_cache/
+
+# Environment variables and secrets
+.env
+
+# Operating system files
+Thumbs.db
+.DS_Store
