@@ -1,0 +1,30 @@
+{
+  "suite": "memory_2_turns",
+  "prompt_id": "M05",
+  "category": "memory",
+  "description": "Recall and combine both earlier facts.",
+  "conversation_id": "evaluation-memory",
+  "prompt": "Summarize the approved vehicles, current milestone, and milestone owner.",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-memory",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0a74ec345c0186e3006ad01098cb4087d1af5ff988a86a31bc",
+    "text": "Approved vehicles: Sedan, Hybrid, Truck.  \nCurrent milestone: Traffic Validation.  \nMilestone owner: Jordan.",
+    "tool_calls": [],
+    "model_rounds": 1,
+    "input_tokens": 625,
+    "output_tokens": 27,
+    "total_tokens": 652
+  },
+  "latency_ms": 1094.254,
+  "input_tokens": 625,
+  "output_tokens": 27,
+  "total_tokens": 652,
+  "estimated_cost_usd": 0.00059025,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

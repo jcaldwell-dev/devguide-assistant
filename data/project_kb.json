@@ -1,0 +1,63 @@
+[
+  {
+    "id": "naming-001",
+    "title": "Actor Blueprint Naming",
+    "category": "naming",
+    "keywords": [
+      "actor",
+      "blueprint",
+      "prefix",
+      "naming"
+    ],
+    "content": "Actor Blueprints use the 'BP_' prefix."
+  },
+  {
+    "id": "naming-002",
+    "title": "Actor Component Blueprint Naming",
+    "category": "naming",
+    "keywords": [
+      "actor",
+      "component",
+      "blueprint",
+      "prefix",
+      "naming"
+    ],
+    "content": "Actor Component Blueprints use the 'BPC_' prefix."
+  },
+  {
+    "id": "naming-003",
+    "title": "Blueprint Interface Naming",
+    "category": "naming",
+    "keywords": [
+      "interface",
+      "blueprint interface",
+      "prefix",
+      "naming"
+    ],
+    "content": "Blueprint Interfaces use the 'BPI_' prefix."
+  },
+  {
+    "id": "blueprint-001",
+    "title": "Event Dispatcher Usage",
+    "category": "blueprint",
+    "keywords": [
+      "event dispatcher",
+      "communication",
+      "notification",
+      "blueprint"
+    ],
+    "content": "Event Dispatchers should be used when one Blueprint must notify multiple listening objects without tightly coupling them."
+  },
+  {
+    "id": "testing-001",
+    "title": "Feature Validation",
+    "category": "testing",
+    "keywords": [
+      "testing",
+      "validation",
+      "feature",
+      "evidence"
+    ],
+    "content": "Completed features must be tested using normal inputs, boundary conditions, and invalid inputs before being marked complete."
+  }
+]

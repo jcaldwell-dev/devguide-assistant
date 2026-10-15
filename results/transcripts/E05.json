@@ -1,0 +1,44 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "E05",
+  "category": "edge_case",
+  "description": "Handle invalid structured tool arguments without crashing.",
+  "conversation_id": "evaluation-edge-05",
+  "prompt": "Estimate a task named Impossible Estimate with complexity 99, 5 estimated hours, 1 dependency, and 20 percent uncertainty.",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-edge-05",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0759b1cef5bf8d55006ad01092e65087d1a65c5cc7a2f35095",
+    "text": "Task: **Impossible Estimate**\n\n- **Base estimate:** 5.00 hours\n- **Effort range:** 5.00–7.75 hours\n- **Risk score:** 6.5\n- **Risk level:** High\n- **Review priority:** Early Review\n\nNote: I had to normalize the complexity input to the tool’s valid range of 1–5, so the estimate reflects **maximum supported complexity**.",
+    "tool_calls": [
+      {
+        "call_id": "call_AtKA415cp7QxO21MTPCxbHBY",
+        "tool_name": "estimate_task",
+        "arguments": {
+          "task_name": "Impossible Estimate",
+          "complexity": 5,
+          "estimated_hours": 5,
+          "dependencies": 1,
+          "uncertainty": 0.2
+        },
+        "success": true,
+        "error_type": null
+      }
+    ],
+    "model_rounds": 2,
+    "input_tokens": 1323,
+    "output_tokens": 136,
+    "total_tokens": 1459
+  },
+  "latency_ms": 2499.642,
+  "input_tokens": 1323,
+  "output_tokens": 136,
+  "total_tokens": 1459,
+  "estimated_cost_usd": 0.00160425,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

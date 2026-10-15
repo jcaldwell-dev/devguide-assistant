@@ -1,0 +1,30 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "M01",
+  "category": "memory",
+  "description": "Store the approved vehicle types.",
+  "conversation_id": "evaluation-memory",
+  "prompt": "Remember that the approved vehicle types are Sedan, Hybrid, and Truck.",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-memory",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0354a72b24eb2771006ad010845d3c87d1a0ed3bcde44a3cc0",
+    "text": "Understood — I’ll treat the approved vehicle types as:\n\n- Sedan\n- Hybrid\n- Truck",
+    "tool_calls": [],
+    "model_rounds": 1,
+    "input_tokens": 557,
+    "output_tokens": 25,
+    "total_tokens": 582
+  },
+  "latency_ms": 1252.862,
+  "input_tokens": 557,
+  "output_tokens": 25,
+  "total_tokens": 582,
+  "estimated_cost_usd": 0.00053025,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

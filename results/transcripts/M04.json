@@ -1,0 +1,30 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "M04",
+  "category": "memory",
+  "description": "Recall the second stored fact.",
+  "conversation_id": "evaluation-memory",
+  "prompt": "What is the current milestone, and who owns it?",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-memory",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0395021fe7b69816006ad01087cf9c87d1ac268f369429041c",
+    "text": "The current milestone is **Traffic Validation**, and the owner is **Jordan**.",
+    "tool_calls": [],
+    "model_rounds": 1,
+    "input_tokens": 675,
+    "output_tokens": 20,
+    "total_tokens": 695
+  },
+  "latency_ms": 969.469,
+  "input_tokens": 675,
+  "output_tokens": 20,
+  "total_tokens": 695,
+  "estimated_cost_usd": 0.00059625,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

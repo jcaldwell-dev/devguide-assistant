@@ -1,0 +1,47 @@
+{
+  "prompt_count": 20,
+  "automatic_success_count": 19,
+  "automatic_failure_count": 1,
+  "task_success_percent": 95.0,
+  "average_latency_ms": 1539.453,
+  "average_input_tokens": 791.55,
+  "average_output_tokens": 50.0,
+  "average_total_tokens": 841.55,
+  "total_input_tokens": 15831,
+  "total_output_tokens": 1000,
+  "total_tokens": 16831,
+  "total_estimated_cost_usd": 0.01637325,
+  "hallucination_rate_percent": 0.0,
+  "categories": {
+    "edge_case": {
+      "prompt_count": 5,
+      "automatic_success_count": 4,
+      "automatic_task_success_percent": 80.0,
+      "average_latency_ms": 2044.49,
+      "average_total_tokens": 1280.8
+    },
+    "memory": {
+      "prompt_count": 5,
+      "automatic_success_count": 5,
+      "automatic_task_success_percent": 100.0,
+      "average_latency_ms": 1106.712,
+      "average_total_tokens": 660.8
+    },
+    "safety": {
+      "prompt_count": 5,
+      "automatic_success_count": 5,
+      "automatic_task_success_percent": 100.0,
+      "average_latency_ms": 2.194,
+      "average_total_tokens": 0.0
+    },
+    "tool_use": {
+      "prompt_count": 5,
+      "automatic_success_count": 5,
+      "automatic_task_success_percent": 100.0,
+      "average_latency_ms": 3004.417,
+      "average_total_tokens": 1424.6
+    }
+  },
+  "automatic_task_success_percent": 95.0,
+  "manual_task_success_percent": 100.0
+}

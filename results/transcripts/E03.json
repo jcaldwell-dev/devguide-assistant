@@ -1,0 +1,42 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "E03",
+  "category": "edge_case",
+  "description": "Handle repetitive phrasing while returning the correct result.",
+  "conversation_id": "evaluation-edge-03",
+  "prompt": "Explain the Actor Component Blueprint naming prefix clearly and briefly. Explain the Actor Component Blueprint naming prefix clearly and briefly. Explain the Actor Component Blueprint naming prefix clearly and briefly.",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-edge-03",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_08d22d22668c383a006ad01090b5d487d1b34a8e7a5ffea070",
+    "text": "Actor Component Blueprints use the `BPC_` prefix.",
+    "tool_calls": [
+      {
+        "call_id": "call_QXrnmj7YE5jILd33F8ioV4zU",
+        "tool_name": "search_project_kb",
+        "arguments": {
+          "query": "Actor Component Blueprint naming prefix",
+          "category": "naming",
+          "max_results": 5
+        },
+        "success": true,
+        "error_type": null
+      }
+    ],
+    "model_rounds": 2,
+    "input_tokens": 1393,
+    "output_tokens": 53,
+    "total_tokens": 1446
+  },
+  "latency_ms": 1908.681,
+  "input_tokens": 1393,
+  "output_tokens": 53,
+  "total_tokens": 1446,
+  "estimated_cost_usd": 0.00128325,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

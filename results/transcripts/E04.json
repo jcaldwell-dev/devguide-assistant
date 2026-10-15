@@ -1,0 +1,35 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "E04",
+  "category": "edge_case",
+  "description": "Reject a blank message through request validation.",
+  "conversation_id": "evaluation-edge-04",
+  "prompt": "   ",
+  "status_code": 422,
+  "response": {
+    "detail": [
+      {
+        "type": "value_error",
+        "loc": [
+          "body",
+          "user_message"
+        ],
+        "msg": "Value error, Value cannot be blank.",
+        "input": "   ",
+        "ctx": {
+          "error": {}
+        }
+      }
+    ]
+  },
+  "latency_ms": 1.041,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "total_tokens": 0,
+  "estimated_cost_usd": 0.0,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

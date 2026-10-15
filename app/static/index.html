@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DevGuide Assistant</title>
+
+    <link
+        rel="stylesheet"
+        href="/static/styles.css"
+    >
+</head>
+
+<body>
+    <main class="application-shell">
+        <header class="application-header">
+            <div>
+                <p class="eyebrow">
+                    Game Development Production Assistant
+                </p>
+
+                <h1>DevGuide Assistant</h1>
+
+                <p class="header-description">
+                    Project guidance, task estimation,
+                    conversation memory, and model-directed
+                    tool use.
+                </p>
+            </div>
+
+            <div class="header-actions">
+                <button
+                    id="newConversationButton"
+                    class="secondary-button"
+                    type="button"
+                >
+                    New Conversation
+                </button>
+
+                <button
+                    id="clearConversationButton"
+                    class="danger-button"
+                    type="button"
+                >
+                    Clear Memory
+                </button>
+            </div>
+        </header>
+
+        <section
+            class="status-panel"
+            aria-label="Application status"
+        >
+            <div class="status-item">
+                <span class="status-label">Status</span>
+
+                <span
+                    id="connectionStatus"
+                    class="status-value status-ready"
+                >
+                    Ready
+                </span>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Conversation</span>
+
+                <code id="conversationIdDisplay">
+                    Loading...
+                </code>
+            </div>
+
+            <div class="status-item">
+                <span class="status-label">Model</span>
+
+                <span id="modelDisplay">
+                    Not used yet
+                </span>
+            </div>
+        </section>
+
+        <section
+            id="chatMessages"
+            class="chat-messages"
+            aria-live="polite"
+            aria-label="Conversation messages"
+        >
+            <article class="message assistant-message">
+                <div class="message-label">
+                    Assistant
+                </div>
+
+                <div class="message-content">
+                    Ask about project conventions, development
+                    practices, or task estimates.
+                </div>
+            </article>
+        </section>
+
+        <section
+            id="activityPanel"
+            class="activity-panel hidden"
+            aria-label="Tool activity"
+        >
+            <h2>Tool Activity</h2>
+
+            <div id="toolActivity"></div>
+        </section>
+
+        <section
+            id="metricsPanel"
+            class="metrics-panel hidden"
+            aria-label="Turn metrics"
+        >
+            <h2>Turn Metrics</h2>
+
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <span class="metric-label">
+                        Model Rounds
+                    </span>
+
+                    <strong id="modelRoundsMetric">
+                        0
+                    </strong>
+                </div>
+
+                <div class="metric-card">
+                    <span class="metric-label">
+                        Input Tokens
+                    </span>
+
+                    <strong id="inputTokensMetric">
+                        0
+                    </strong>
+                </div>
+
+                <div class="metric-card">
+                    <span class="metric-label">
+                        Output Tokens
+                    </span>
+
+                    <strong id="outputTokensMetric">
+                        0
+                    </strong>
+                </div>
+
+                <div class="metric-card">
+                    <span class="metric-label">
+                        Total Tokens
+                    </span>
+
+                    <strong id="totalTokensMetric">
+                        0
+                    </strong>
+                </div>
+            </div>
+        </section>
+
+        <form
+            id="chatForm"
+            class="chat-form"
+        >
+            <label
+                for="messageInput"
+                class="input-label"
+            >
+                Message
+            </label>
+
+            <div class="input-row">
+                <textarea
+                    id="messageInput"
+                    name="message"
+                    rows="3"
+                    maxlength="4000"
+                    placeholder="Ask a project question..."
+                    required
+                ></textarea>
+
+                <button
+                    id="sendButton"
+                    class="primary-button"
+                    type="submit"
+                >
+                    Send
+                </button>
+            </div>
+
+            <p class="input-hint">
+                Press Enter to send. Use Shift+Enter for a
+                new line.
+            </p>
+        </form>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

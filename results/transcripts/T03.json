@@ -1,0 +1,42 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "T03",
+  "category": "tool_use",
+  "description": "Retrieve the Blueprint Interface naming convention.",
+  "conversation_id": "evaluation-tool-03",
+  "prompt": "What prefix should a Blueprint Interface use?",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-tool-03",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_00fc8889b76b5166006ad0107e0aac87d1bab89ecc1fb54317",
+    "text": "Blueprint Interfaces use the `BPI_` prefix.",
+    "tool_calls": [
+      {
+        "call_id": "call_KU6VZv8PJhrRkjCXlgGl0n9Z",
+        "tool_name": "search_project_kb",
+        "arguments": {
+          "query": "Blueprint Interface prefix naming convention",
+          "category": "naming",
+          "max_results": 5
+        },
+        "success": true,
+        "error_type": null
+      }
+    ],
+    "model_rounds": 2,
+    "input_tokens": 1339,
+    "output_tokens": 51,
+    "total_tokens": 1390
+  },
+  "latency_ms": 2211.963,
+  "input_tokens": 1339,
+  "output_tokens": 51,
+  "total_tokens": 1390,
+  "estimated_cost_usd": 0.00123375,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

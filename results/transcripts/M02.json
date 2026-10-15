@@ -1,0 +1,30 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "M02",
+  "category": "memory",
+  "description": "Store a second project fact.",
+  "conversation_id": "evaluation-memory",
+  "prompt": "Remember that the current milestone is Traffic Validation and the owner is Jordan.",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-memory",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0cbe21e7ccf874ee006ad010859f6c87d195178c7651313a6d",
+    "text": "Got it — I’ll treat the current milestone as **Traffic Validation** and the owner as **Jordan**.",
+    "tool_calls": [],
+    "model_rounds": 1,
+    "input_tokens": 601,
+    "output_tokens": 26,
+    "total_tokens": 627
+  },
+  "latency_ms": 1229.726,
+  "input_tokens": 601,
+  "output_tokens": 26,
+  "total_tokens": 627,
+  "estimated_cost_usd": 0.00056775,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

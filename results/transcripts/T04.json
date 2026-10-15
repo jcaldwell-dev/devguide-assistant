@@ -1,0 +1,44 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "T04",
+  "category": "tool_use",
+  "description": "Run the deterministic task estimator.",
+  "conversation_id": "evaluation-tool-04",
+  "prompt": "Estimate a task named Add Vehicle Spawning with complexity 3, 6 estimated hours, 2 dependencies, and 25 percent uncertainty.",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-tool-04",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_047f6c0b48ff4727006ad01080bc1087d1a4380d826552bfb0",
+    "text": "Estimate for **Add Vehicle Spawning**:\n\n- **Base estimate:** 6.0 hours\n- **Effort range:** 6.0–9.25 hours\n- **Risk score:** 4.85\n- **Risk level:** Moderate\n- **Review priority:** Planned\n\n**Summary:** This task carries moderate planning risk, mainly due to its dependencies and 25% uncertainty.",
+    "tool_calls": [
+      {
+        "call_id": "call_Ik98y7IUT2vUqCvFEME0FNhY",
+        "tool_name": "estimate_task",
+        "arguments": {
+          "task_name": "Add Vehicle Spawning",
+          "complexity": 3,
+          "estimated_hours": 6,
+          "dependencies": 2,
+          "uncertainty": 0.25
+        },
+        "success": true,
+        "error_type": null
+      }
+    ],
+    "model_rounds": 2,
+    "input_tokens": 1334,
+    "output_tokens": 130,
+    "total_tokens": 1464
+  },
+  "latency_ms": 2750.787,
+  "input_tokens": 1334,
+  "output_tokens": 130,
+  "total_tokens": 1464,
+  "estimated_cost_usd": 0.0015855,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

@@ -1,0 +1,30 @@
+{
+  "suite": "memory_8_turns",
+  "prompt_id": "M03",
+  "category": "memory",
+  "description": "Recall the first stored fact.",
+  "conversation_id": "evaluation-memory",
+  "prompt": "Which vehicle types did I approve?",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-memory",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0d5d95f9ecb11757006ad0109c0e6887d19979b72cb1658cd2",
+    "text": "You approved these vehicle types:\n\n- Sedan\n- Hybrid\n- Truck",
+    "tool_calls": [],
+    "model_rounds": 1,
+    "input_tokens": 643,
+    "output_tokens": 18,
+    "total_tokens": 661
+  },
+  "latency_ms": 1097.738,
+  "input_tokens": 643,
+  "output_tokens": 18,
+  "total_tokens": 661,
+  "estimated_cost_usd": 0.00056325,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

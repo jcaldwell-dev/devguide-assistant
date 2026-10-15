@@ -1,0 +1,42 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "T01",
+  "category": "tool_use",
+  "description": "Retrieve the Actor Component naming convention.",
+  "conversation_id": "evaluation-tool-01",
+  "prompt": "What prefix should an Actor Component Blueprint use?",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-tool-01",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0e33845ed261d3e4006ad01077f7c087d18a663f1efd0329ab",
+    "text": "Use the **`BPC_`** prefix for an Actor Component Blueprint.",
+    "tool_calls": [
+      {
+        "call_id": "call_3X1geJU8iQuoS5GHzg4iddW9",
+        "tool_name": "search_project_kb",
+        "arguments": {
+          "query": "What prefix should an Actor Component Blueprint use?",
+          "category": "naming",
+          "max_results": 5
+        },
+        "success": true,
+        "error_type": null
+      }
+    ],
+    "model_rounds": 2,
+    "input_tokens": 1350,
+    "output_tokens": 59,
+    "total_tokens": 1409
+  },
+  "latency_ms": 3900.69,
+  "input_tokens": 1350,
+  "output_tokens": 59,
+  "total_tokens": 1409,
+  "estimated_cost_usd": 0.001278,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

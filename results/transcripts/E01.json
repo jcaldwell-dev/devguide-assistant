@@ -1,0 +1,55 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "E01",
+  "category": "edge_case",
+  "description": "Handle an unknown knowledge-base topic without inventing a rule.",
+  "conversation_id": "evaluation-edge-01",
+  "prompt": "What is the approved dragon animation pipeline for this project?",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-edge-01",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0192ed4e6ed20ef5006ad0108bff8c87d1887a3fad4f7a0dba",
+    "text": "I couldn’t find any project-specific guidance in the knowledge base for an approved dragon animation pipeline.\n\nIf you want, I can help you draft a safe default pipeline for Unreal-based character animation, but I shouldn’t present it as the project’s approved standard without documentation.",
+    "tool_calls": [
+      {
+        "call_id": "call_I2E1z2mSRiv6PA2Cs6EJVvLg",
+        "tool_name": "search_project_kb",
+        "arguments": {
+          "query": "approved dragon animation pipeline",
+          "category": "animation",
+          "max_results": 5
+        },
+        "success": true,
+        "error_type": null
+      },
+      {
+        "call_id": "call_3XZsO0jOuJOIrbaTrMqUFbZN",
+        "tool_name": "search_project_kb",
+        "arguments": {
+          "query": "dragon animation pipeline approved workflow skeletal mesh animation import retargeting export",
+          "category": null,
+          "max_results": 5
+        },
+        "success": true,
+        "error_type": null
+      }
+    ],
+    "model_rounds": 3,
+    "input_tokens": 1947,
+    "output_tokens": 132,
+    "total_tokens": 2079
+  },
+  "latency_ms": 3267.837,
+  "input_tokens": 1947,
+  "output_tokens": 132,
+  "total_tokens": 2079,
+  "estimated_cost_usd": 0.00205425,
+  "automatic_success": false,
+  "automatic_failures": [
+    "None of the acceptable response terms were found."
+  ],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

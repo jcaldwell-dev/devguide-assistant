@@ -1,0 +1,42 @@
+{
+  "suite": "baseline_8_turns",
+  "prompt_id": "T02",
+  "category": "tool_use",
+  "description": "Retrieve the Actor Blueprint naming convention.",
+  "conversation_id": "evaluation-tool-02",
+  "prompt": "What prefix should a standard Actor Blueprint use?",
+  "status_code": 200,
+  "response": {
+    "conversation_id": "evaluation-tool-02",
+    "model": "gpt-5.4-mini",
+    "response_id": "resp_0336eccf3ca274b3006ad0107a8de487d1b16f9acf0db4f7d6",
+    "text": "A standard Actor Blueprint should use the `BP_` prefix.",
+    "tool_calls": [
+      {
+        "call_id": "call_IyUrvP4ZUy8H0mTsjNoloxh5",
+        "tool_name": "search_project_kb",
+        "arguments": {
+          "query": "standard Actor Blueprint prefix naming convention",
+          "category": "naming",
+          "max_results": 3
+        },
+        "success": true,
+        "error_type": null
+      }
+    ],
+    "model_rounds": 2,
+    "input_tokens": 1345,
+    "output_tokens": 54,
+    "total_tokens": 1399
+  },
+  "latency_ms": 3841.078,
+  "input_tokens": 1345,
+  "output_tokens": 54,
+  "total_tokens": 1399,
+  "estimated_cost_usd": 0.00125175,
+  "automatic_success": true,
+  "automatic_failures": [],
+  "manual_task_success": null,
+  "manual_hallucination": null,
+  "manual_notes": ""
+}

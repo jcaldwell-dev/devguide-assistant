@@ -1,0 +1,8 @@
+{
+  "prompt_count": 20,
+  "manual_success_count": 20,
+  "manual_failure_count": 0,
+  "manual_task_success_percent": 100.0,
+  "hallucination_count": 0,
+  "hallucination_rate_percent": 0.0
+}
